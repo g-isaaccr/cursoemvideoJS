@@ -19,13 +19,13 @@
     </style>
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
+    <h1>Olá, mundo!</h1> 
     <p>Já me livrei da madição</p>
     <script>
-        window.alert("Minha primeira mensagem") //posso só deixar .alert, cria uma mensagem antes de abrir o site
-        window.confirm('Está gostando do JS?') // Um esquetionário com sim ou não
-        window.prompt('Qual é o seu nome?')
-        // um formulário perguntando
+        var n1 =Number.parseFloat(window.prompt('Digite um número: ')) // Number.parseInt para inteiro, Number.parseFloat para número real ou deixo o JavaScript decidir com Number
+        var n2 =Number.parseFloat(window.prompt ('Digite outro numero: ')) // ou converto direto, ou converto na resposta
+        var s = n1+n2
+        window.alert(' A soma dos numeros é ' + s)
         
     </script>
 </body>
