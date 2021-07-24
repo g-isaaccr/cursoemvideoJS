@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS</title>
+    <style>
+
+        body{
+            font-size: 12pt;
+        }
+        button { font-size: 12pt; padding: 30px; }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Dados v2.0</h1>
+    <button onclick="clicou()"> Clique para começar </button> 
+    <section id="resultado"> <!-- Ultilizei o section para poder pegar uma referência com o ID-->
+        <p> Aqui vai aparecer o resultado</p>
+    </section>
+    
+    <script>
+        function clicou () { 
+        var nome = window.prompt('Qual é o seu nome?')
+        var res = window.document.getElementById('resultado')
+        res.innerHTML = `<p> Olá, <strong>${nome} </strong>! É um prazer te conhecer! ` // Tenho que usar o innerHTML para  poder deixar em negrito. Considerar o paragrafo
+        
+        }
+    </script>
+</body>
+</html>
