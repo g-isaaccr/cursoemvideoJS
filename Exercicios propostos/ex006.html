@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="py-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        button{
+            font-size:  12pt;
+            padding: 30px;
+        }
+    </style>
+</head>
+    <h1>Somando dois números</h1>
+<body>
+    <button onclick="clicou()"> Iniciar a soma</button>
+    <section id="resultado"> 
+        <P>O resultado vem aqui...</P>
+    </section>
+
+    <script>
+        function clicou (){
+        var n1 = Number(window.prompt(`Digite um numero:`))
+        var n2 = Number(window.prompt(`Digite outro número:`) )
+        soma = n1+n2
+        //var numero1 = Number(n1.value) estava errando aqui
+        //var numero2 = Number(n2.value)
+        var res = window.document.getElementById('resultado') 
+        res.innerHTML = (`<p>A soma entre <mark>${n1}</mark> e <mark>${n2}</mark> é igual a ${soma}!`)
+
+        }
+    </script>
+
+</body>
+</html>
