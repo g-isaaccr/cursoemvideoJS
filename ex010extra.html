@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Descobrindo a nacionalidade</h1>
+  
+    De qual pais você é? <input type="text" name="nascional" id="nascional">
+    
+    <input type="button" value="Verificar" onclick="descobrir()">
+
+    <div id='res'> </div>
+
+    <script>
+        function descobrir (){
+            var nas = window.document.getElementById('nascional')
+            var res = window.document.getElementById('res')
+            var texto = String(nas.value) // Fiquei pecando aqui, esqueci de converter
+            if(texto == 'Brasil'){
+                res.innerHTML =`<p>Você é Brasileiro!</p>`
+            }
+            else{
+                res.innerHTML = `<p>Você é estrangeiro!</p>`
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
