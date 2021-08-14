@@ -1,1 +1,23 @@
-window.alert('olá')
+function inicio (){
+    let num = window.document.querySelector('#txtn')
+    let tab = window.document.getElementById('seltab')
+    if(num.value.length ==0)
+    {
+        window.alert('Por favor digite um número')
+    }
+    else
+    {
+        let n = Number(num.value)
+        c=1
+        tab.innerHTML = ''
+        while(c<=10)
+        {
+            var item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c} `
+            item.value = `tab${c}`
+            tab.appendChild(item)
+            c++
+        }
+    
+    }
+} 
