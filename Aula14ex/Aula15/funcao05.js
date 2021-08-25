@@ -16,4 +16,4 @@ console.log(fatorial(5))
 n! = n x (n-1)!
 1! = 1
 
-*/ 
+*/
